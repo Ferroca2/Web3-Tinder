@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import logo from '../assets/logo.png'
+
 const style = {
     wrapper: `h-24 py-11 text-white flex w-screen items-center px-16 justify-between`,
     main: `flex items-center gap-4`,
@@ -16,7 +19,7 @@ const Header = () => {
       className={style.wrapper}
     >
       <div className={style.main}>
-        {/* <Image src={fire} alt="fire" height={45} width={45} /> */}
+        <Image src={logo} alt="logo" height={45} width={45} />
         <h1 className={style.tinderText}>tinder</h1>
 
         <div className={style.leftMenu}>
