@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import Card from '../components/Card'
 
 const style = {
   wrapper: `h-screen w-screen flex flex-col bg-[#222229]`,
@@ -9,7 +10,9 @@ export default function Home() {
   return (
     <div className={style.wrapper}>
       <Header/>
-      <div className={style.cardsContaienr}></div>
+      <div className={style.cardsContainer}>
+        <Card/>
+      </div>
     </div>
   )
 }
